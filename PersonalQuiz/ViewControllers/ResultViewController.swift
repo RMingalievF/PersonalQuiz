@@ -23,7 +23,7 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.setHidesBackButton(true, animated: false)
-        
+        filteringAnswers()
     }
     
 
@@ -37,7 +37,12 @@ class ResultViewController: UIViewController {
     }
     
     
-    func filteringAnswers(_ answers: [Answer]) {
-        //let result = answers.map { an        }
+    func filteringAnswers() {
+        var result: [()] = answers.map { animal in
+            let animalResult = animal.animal
+            
+        }
+        print(result)
+       
     }
 }
