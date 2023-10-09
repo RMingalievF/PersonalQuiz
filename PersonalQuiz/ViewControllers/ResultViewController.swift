@@ -32,14 +32,10 @@ class ResultViewController: UIViewController {
         navigationController?.dismiss(animated: true)
     }
     
-    deinit{
-        print("ResultVC has been delocated")
-    }
-    
     
     func filteringAnswers() {
-        var result: [()] = answers.map { animal in
-            let animalResult = animal.animal
+        let result: [()] = answers.map { animal in
+            _ = animal.animal
             
         }
         print(result)
